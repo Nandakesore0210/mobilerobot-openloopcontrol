@@ -15,11 +15,11 @@ if __name__ == '__main__':
     effect – enum: (“on”, “off”, “flash”, “breath”, “scrolling”) lighting effect type, on: always on; off: always off; flash: blinking; breath: breathing; scrolling: horse racing Lamp (only valid for PTZ lamp)
     '''
     for i in range(10):
-        ep_led.set_led(comp="all",r=255,g=0,b=0,effect="on")   
+        ep_led.set_led(comp="all",r=135,g=206,b=235,effect="on")   
         time.sleep(2)
-        ep_led.set_led(comp="all",r=0,g=255,b=0,effect="on")
+        ep_led.set_led(comp="all",r=255,g=105,b=180,effect="on")
         time.sleep(2)
-        ep_led.set_led(comp="all",r=0,g=0,b=255,effect="on")
+        ep_led.set_led(comp="all",r=50,g=205,b=50,effect="on")
         time.sleep(2)        
     
     print("Completed...")
